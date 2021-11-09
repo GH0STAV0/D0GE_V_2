@@ -57,6 +57,7 @@ def build_driver(width,height):
 		#firefox_options = Firefox_Options()		
 		ops.add_argument(moz_wid)
 		ops.add_argument(moz_hig)
+		fp.set_preference('network.proxy.type', 1)
 		
 		fp.set_preference("dom.webdriver.enabled", False)
 		fp.set_preference('useAutomationExtension', False)
